@@ -75,6 +75,9 @@ public class Order {
         if (shippableItemCount != itemQty) {
             return false;
         }
+        if (shipped) {
+            return false;
+        }
         return true;
     }
 
